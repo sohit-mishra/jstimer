@@ -147,29 +147,9 @@
         var hour = Number(document.querySelector('#hour').value);
         var minutes = Number(document.querySelector('#min').value);
         var seconds = Number(document.querySelector('#sec').value);
-        interval = setInterval(timerstart, 50);
+        interval = setInterval(timerstart, 10);
         function timerstart() {
-
-            // if (hour >= 1 && seconds === 0) {
-            //     minutes--;
-            //     seconds = 59;
-            // } else if (minutes >= 0 && seconds === 0) {
-            //     minutes--;
-            //     seconds = 59;
-            // }else {
-            //     seconds--;
-            // }
-
-            // if (hour === 0 && minutes >= 1 && seconds === 0) {
-            //     hour = 0;
-            //     minutes--;
-            //     seconds = 59;
-            //     console.log(minutes);
-            //     console.log('second');
-            // } else {
-            //     seconds--;
-            // }
-
+            
             if(minutes === 0 && seconds === 0){
                 if(hour > 0){
                     hour--;
