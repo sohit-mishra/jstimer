@@ -147,7 +147,7 @@
         var hour = Number(document.querySelector('#hour').value);
         var minutes = Number(document.querySelector('#min').value);
         var seconds = Number(document.querySelector('#sec').value);
-        interval = setInterval(timerstart, 10);
+        interval = setInterval(timerstart, 1000);
         function timerstart() {
             
             if(minutes === 0 && seconds === 0){
